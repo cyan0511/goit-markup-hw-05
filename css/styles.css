@@ -1,0 +1,362 @@
+:root {
+  --main-color: #434455;
+  --item-color: #2e2f42;
+  --cornflower: #e7e9fc;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-color);
+  background-color: var(--white);
+  width: 1440px;
+  margin: auto;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 h5,
+h6,
+p {
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--item-color);
+  display: block;
+}
+
+.contact-link {
+  color: var(--main-color);
+}
+
+.link:focus,
+.link:hover {
+  color: #404bbf;
+}
+
+.address {
+  font-style: normal;
+}
+
+.contact {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--item-color);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-right: 76px;
+}
+
+.logo > .studio {
+  color: var(--item-color);
+}
+
+.footer > .logo > .studio {
+  color: var(--white);
+}
+
+.section {
+  padding: 120px 0 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* 1st section */
+.our-service {
+  background-color: #2e2f42;
+  justify-content: center;
+  padding: 188px 0 188px;
+  display: block;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  max-width: 496px;
+
+  text-align: center;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.order-service {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4d5ae5;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+
+  margin: auto;
+  padding: 16px 32px;
+  display: block;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-service:hover,
+.order-service:focus {
+  background-color: #404bbf;
+}
+/* end 1st section */
+
+/* 2nd section */
+.feature {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--item-color);
+  margin-bottom: 8px;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.list-item {
+  gap: 24px;
+}
+/* end 2nd section */
+
+/* 3rd section */
+.what-we-do {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--item-color);
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+.what-we-do-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+/* end 3rd section */
+
+/* 4th section */
+.our-team {
+  background-color: #f4f4fd;
+  padding: 120px 0 120px;
+}
+
+.our-team-list {
+  gap: 24px;
+}
+
+.team {
+  background-color: #f4f4fd;
+  color: var(--item-color);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-item {
+  background-color: var(--white);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-container {
+  padding: 32px 0 32px;
+}
+
+.item-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--item-color);
+  text-align: center;
+  margin-bottom: 8px;
+}
+/* end 4th section */
+
+.footer {
+  background-color: #2e2f42;
+  justify-content: center;
+  padding: 100px 0 100px;
+}
+
+.footer > .container .logo .studio {
+  color: #f4f4fd;
+}
+.footer > .container > .link {
+  display: inline-block;
+}
+
+.footer > .marketing {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f4f4fd;
+}
+
+.filter-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  cursor: pointer;
+  padding: 12px 24px 12px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.filter-btn:focus,
+.filter-btn:hover {
+  color: var(--white);
+  background-color: #404bbf;
+  border: 1px solid transparent;
+}
+
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
+.portfolio-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--item-color);
+  margin-bottom: 8px;
+}
+
+.portfolio-desc {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  line-height: 1.5;
+}
+
+.filter {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.service-list {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.service-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.name-category {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.feature-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
